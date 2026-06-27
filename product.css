@@ -1,0 +1,294 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#fbf7f4;
+    color:#2f3434;
+}
+
+.navbar{
+    height:80px;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 60px;
+    border-bottom:1px solid #eee;
+}
+
+.logo a{
+    text-decoration:none;
+    color:#222;
+    font-size:32px;
+    letter-spacing:10px;
+    font-weight:300;
+}
+
+nav{
+    display:flex;
+    gap:40px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#222;
+    font-size:15px;
+    font-weight:500;
+    position:relative;
+}
+
+nav a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0;
+    height:2px;
+    background:#c98f84;
+    transition:0.3s;
+}
+
+nav a:hover::after{
+    width:100%;
+}
+
+nav a:hover{
+    color:#c98f84;
+}
+
+.breadcrumb{
+    padding:30px 60px;
+    color:#999;
+    font-size:14px;
+}
+
+.product-container{
+    display:grid;
+    grid-template-columns:100px 45% 40%;
+    gap:40px;
+    padding:20px 60px 60px;
+}
+
+.thumbs{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.thumbs img{
+    width:80px;
+    height:90px;
+    object-fit:cover;
+    border:1px solid #eee;
+}
+
+.main-image{
+    text-align:center;
+}
+
+.main-image img{
+    width:100%;
+    max-height:650px;
+    object-fit:contain;
+}
+
+.product-info{
+    padding-top:40px;
+}
+
+.brand-name{
+    color:#c98f84;
+    font-weight:bold;
+    letter-spacing:1px;
+    margin-bottom:10px;
+}
+
+.product-info h2{
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+.stars{
+    color:#f7b500;
+    margin-bottom:15px;
+}
+
+.stars span{
+    color:#555;
+    margin-left:10px;
+}
+
+.short-desc{
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.description{
+    margin:25px 0;
+    line-height:1.8;
+    color:#555;
+}
+
+.price{
+    font-size:28px;
+    color:#c98f84;
+    font-weight:bold;
+    margin-bottom:25px;
+}
+
+.size{
+    margin-bottom:15px;
+}
+
+.quantity{
+    display:flex;
+    width:120px;
+    height:42px;
+    border:1px solid #ccc;
+    margin-bottom:25px;
+}
+
+.quantity button{
+    width:40px;
+    border:none;
+    background:white;
+    font-size:20px;
+}
+
+.quantity span{
+    width:40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:white;
+}
+
+.cart-btn{
+    width:100%;
+    height:58px;
+    border:none;
+    background:#222;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.cart-btn:hover{
+    background:#c98f84;
+}
+
+.details{
+    padding:60px;
+    border-top:1px solid #ddd;
+}
+
+.tabs{
+    display:flex;
+    justify-content:center;
+    gap:80px;
+    margin-bottom:40px;
+    font-weight:bold;
+}
+
+.tabs span:first-child{
+    border-bottom:2px solid #222;
+    padding-bottom:10px;
+}
+
+.details h3{
+    margin:25px 0 10px;
+}
+
+.details p,
+.details li{
+    line-height:1.8;
+    color:#555;
+}
+.tabs button{
+    background:none;
+    border:none;
+    font-weight:bold;
+    margin:0 30px;
+    padding-bottom:10px;
+    cursor:pointer;
+}
+
+.tab-content{
+    display:none;
+}
+
+.tab-content.active{
+    display:block;
+}
+.quantity-box{
+    display:flex;
+    width:130px;
+    height:42px;
+    border:1px solid #ccc;
+    margin-bottom:25px;
+}
+
+.quantity-box button{
+    width:40px;
+    border:none;
+    background:white;
+    font-size:20px;
+    cursor:pointer;
+}
+
+.quantity-box input{
+    width:50px;
+    border:none;
+    text-align:center;
+    font-size:16px;
+}
+footer{
+    background:#f3ebe5;
+    padding:50px 80px;
+    display:flex;
+    justify-content:space-between;
+    margin-top:80px;
+}
+
+.footer-section{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.footer-section a{
+    color:#555;
+    text-decoration:none;
+}
+
+.copyright{
+    text-align:center;
+    background:#eadfd7;
+    padding:18px;
+    color:#666;
+}
+.product-actions{
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+}
+
+.secondary-btn{
+    flex:1;
+    text-align:center;
+    padding:14px;
+    border:1px solid #c98f84;
+    color:#c98f84;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.secondary-btn:hover{
+    background:#c98f84;
+    color:white;
+}
